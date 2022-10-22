@@ -1,0 +1,53 @@
+.loading {
+    position: relative;
+}
+
+.loading span {
+    position: relative;
+    display: inline-block;
+    font-size: 80px;
+    /*   if you want only one color then you uncomment this  */
+    /*   color: var(--color); */
+    text-transform: uppercase;
+    animation: flip 1s infinite;
+    animation-delay: calc(.1s * var(--i))
+}
+
+.l {
+    color: #773e05;
+}
+
+.o {
+    color: #FF9933;
+}
+
+.a {
+    color: #dd1c1c;
+}
+
+.d {
+    color: #000080;
+}
+
+.i {
+    color: #d60e0e;
+}
+
+.n {
+    color: #138808;
+}
+
+.g {
+    color: #319628;
+}
+
+.dot {
+    color: rgb(0, 0, 0);
+}
+
+@keyframes flip {
+    0%,
+    80% {
+        transform: rotateY(360deg)
+    }
+}
